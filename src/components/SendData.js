@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { Card } from 'antd';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 import { Tabs } from 'antd';
 
 const SendData = ({ loading, usuarios }) => {
@@ -55,6 +57,14 @@ const SendData = ({ loading, usuarios }) => {
     return (
 
         <div>
+            <div>
+                <h1>
+                    Example heading
+                    <Badge bg="secondary" as={Button}>
+                        New
+                    </Badge>
+                </h1>
+            </div>
             <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
         </div>
     );
