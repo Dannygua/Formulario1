@@ -1,43 +1,43 @@
-
-import './App.css';
-import axios from 'axios';
-import React, { useEffect, useState } from "react"
-import SendData from './components/SendData';
-import { Button, Checkbox, Form, Input } from 'antd';
+import "./App.css";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import SendData from "./components/SendData";
+import { Button, Checkbox, Form, Input } from "antd";
+import Formulario from "./components/Formulario";
 
 function App() {
-
-  const [usuarios, setUsers] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [usuarios, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
   const fetchUserData = (data) => {
-    setLoading(true)
+    setLoading(true);
     fetch("http://localhost:4000/api/Info", {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     })
-      .then(response => {
-        return response.json()
+      .then((response) => {
+        return response.json();
       })
-      .then(data => {
-        setUsers(data["soap:Envelope"]["soap:Body"][0].ObtenerDataClickFullResponse[0].ObtenerDataClickFullResult[0]["diffgr:diffgram"][0].NewDataSet[0])
+      .then((data) => {
+        setUsers(
+          data["soap:Envelope"]["soap:Body"][0].ObtenerDataClickFullResponse[0]
+            .ObtenerDataClickFullResult[0]["diffgr:diffgram"][0].NewDataSet[0]
+        );
 
-        setLoading(false)
-      })
-  }
+        setLoading(false);
+      });
+  };
 
   const onFinish = (values) => {
-    console.log('Success:', values);
-    fetchUserData(values)
-
+    console.log("Success:", values);
+    fetchUserData(values);
   };
 
   const onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
+    console.log("Failed:", errorInfo);
   };
-
 
   return (
     <div className="App">
@@ -65,7 +65,7 @@ function App() {
           rules={[
             {
               required: true,
-              message: 'Please input your username!',
+              message: "Please input your username!",
             },
           ]}
         >
@@ -78,13 +78,12 @@ function App() {
           rules={[
             {
               required: true,
-              message: 'Please input your password!',
+              message: "Please input your password!",
             },
           ]}
         >
           <Input />
         </Form.Item>
-
 
         <Form.Item
           wrapperCol={{
@@ -97,6 +96,7 @@ function App() {
           </Button>
         </Form.Item>
       </Form>
+      <Formulario />
       <SendData loading={loading} usuarios={usuarios} />
     </div>
   );
