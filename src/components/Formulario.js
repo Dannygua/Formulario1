@@ -357,6 +357,165 @@ const Formulario = () => {
             </Row>
           </Col>
         </Row>
+        <Row>
+          <Col className="SquadStandCol5" md={1}>
+            Otros
+          </Col>
+          <Col className="SquadStandCol5">Ama de casa</Col>
+          <Col className="SquadStandCol5">Jubilado:</Col>
+          <Col className="SquadStandCol5">Estudiante</Col>
+          <Col className="SquadStandCol5" md={3}>
+            Si tiene otra actividad especique:
+          </Col>
+        </Row>
+        <Row>
+          <Col className="SquadStandCol5" md={1}>
+            Otros
+          </Col>
+          <Col className="SquadStandCol5">
+            ¿Usted ha ocupado en el ultimo año un cargo de elección popular o de
+            responsabilidad política y social?
+          </Col>
+          <Col className="SquadStandCol5" md={1}>
+            SI
+          </Col>
+          <Col className="SquadStandCol5" md={3}>
+            NO
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            className="SquadStandCol2"
+            style={{
+              backgroundColor: "#5D5B5E",
+              color: "white",
+            }}
+          >
+            DATOS DEL CÓNYUGE
+          </Col>
+        </Row>
+        <Row
+          style={{
+            backgroundColor: "#FDCA04",
+          }}
+        >
+          <Col className="SquadStandCol5">Apellidos</Col>
+          <Col className="SquadStandCol5">Nombres</Col>
+          <Col className="SquadStandCol5">
+            Tipo de identificación (marque una "x")
+          </Col>
+          <Col className="SquadStandCol5">Número de identificación</Col>
+          <Col className="SquadStandCol5">Lugar de Nacimiento</Col>
+          <Col className="SquadStandCol5">Fecha de Nacimiento (dd/mm/aaaa)</Col>
+        </Row>
+        <Row>
+          <Col className="SquadStandCol4"></Col>
+          <Col className="SquadStandCol4"></Col>
+          <Col className="">
+            <Row>
+              <Col className="SquadStandCol4_1">Cédula</Col>
+              <Col className="SquadStandCol4_1">Pasaporte</Col>
+            </Row>
+            <Row>
+              <Col className="SquadStandCol4_2"></Col>
+              <Col className="SquadStandCol4_2"></Col>
+            </Row>
+          </Col>
+          <Col>
+            <Row>
+              <Col className="SquadStandCol4_3"></Col>
+            </Row>
+            <Row>
+              <Col className="SquadStandCol4_4">Número de visa</Col>
+            </Row>
+            <Row>
+              <Col className="SquadStandCol4_5"></Col>
+            </Row>
+          </Col>
+          <Col>
+            <Row>
+              <Col className="SquadStandCol4_6">País:</Col>
+            </Row>
+            <Row>
+              <Col className="SquadStandCol4_6">Cantón:</Col>
+            </Row>
+            <Row>
+              <Col className="SquadStandCol4_6">Ciudad:</Col>
+            </Row>
+            <Row>
+              <Col className="SquadStandCol4_6">Nacionalidad:</Col>
+            </Row>
+          </Col>
+          <Col className="SquadStandCol4"></Col>
+        </Row>
+        <Row>
+          <Col className="SquadStandCol2" md={2}>
+            Nivel de Instrucción:
+          </Col>
+          <Col className="SquadStandCol2" md={2}></Col>
+          <Col className="SquadStandCol2" md={2}>
+            Etica:
+          </Col>
+          <Col className="SquadStandCol2"></Col>
+        </Row>
+        <Row>
+          <Col className="SquadStandCol2">Teléfono convencional</Col>
+          <Col className="SquadStandCol2">Teléfono celular</Col>
+          <Col className="SquadStandCol2">Correo electrónico</Col>
+          <Col className="SquadStandCol2">Actividad Económica</Col>
+          <Col className="SquadStandCol2">Cargo</Col>
+          <Col className="SquadStandCol2">
+            Teléfono convencional del trabajo
+          </Col>
+          <Col className="SquadStandCol2">Teléfono celular del trabajo</Col>
+        </Row>
+        <Row>
+          <Col className="SquadStandCol3"></Col>
+          <Col className="SquadStandCol3"></Col>
+          <Col className="SquadStandCol3"></Col>
+          <Col className="SquadStandCol3"></Col>
+          <Col className="SquadStandCol3"></Col>
+          <Col className="SquadStandCol3"></Col>
+          <Col className="SquadStandCol3"></Col>
+        </Row>
+        <Row>
+          <Col className="SquadStandCol3">
+            ¿Su cónyuge ha ocupado en el ultimo año un cargo de elección popular
+            o de responsabilidad política y social?
+          </Col>
+          <Col className="SquadStandCol3" md={2}>
+            {" "}
+            SI{" "}
+          </Col>
+          <Col className="SquadStandCol3" md={3}>
+            {" "}
+            NO{" "}
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            className="SquadStandCol2"
+            style={{
+              backgroundColor: "#5D5B5E",
+              color: "white",
+            }}
+          >
+            INFORMACIÓN FINANCIERA
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            className="SquadStandCol3"
+            style={{
+              backgroundColor: "#FDCA04",
+            }}
+          >
+            Ingrese la información financiera del último ejercicio económico
+          </Col>
+        </Row>
+        <Row>
+          <Col></Col>
+        </Row>
       </Container>
     </div>
   );
