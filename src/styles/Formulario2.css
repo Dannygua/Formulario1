@@ -1,0 +1,79 @@
+.PrincipalContainer{
+
+    font-size: 12px;
+
+}
+
+.SquadStand{
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.SquadStandCol2{
+    border: 2px solid black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.SquadStandCol3{
+    border: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.SquadStandCol4{
+    border: 2px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.SquadStandCol4_1{
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.SquadStandCol4_2{
+    border: 2px solid black;
+    padding-top: 61.7px;
+    padding-bottom: 61.7px;
+}
+
+.SquadStandCol4_3{
+    border: 2px solid black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.SquadStandCol4_4{
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.SquadStandCol4_5{
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.SquadStandCol4_6{
+    border: 2px solid black;
+    padding-top: 9.3px;
+    padding-bottom: 9.3px;
+}
+
+.SquadStandCol5{
+    border: 2px solid black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: left;
+}
+
+
+.SquadStandCol6{
+    border: 2px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
