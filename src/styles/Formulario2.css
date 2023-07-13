@@ -4,11 +4,35 @@
 
 }
 
+
+.Seccionador{
+    background-color: yellow;
+    border: 1px solid black;
+    justify-content: center;
+    
+}
+
+
 .SquadStand{
     border: 1px solid black;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.SquadStand2{
+    border: 1px solid black;
+    justify-content: start;
+    text-align: left;
+    /* height: 28px; */
+}
+
+.SquadStand3{
+    border: 1px solid black;
+    background-color: gray;
+
+}
+
+
 
 .SquadStandCol2{
     border: 2px solid black;

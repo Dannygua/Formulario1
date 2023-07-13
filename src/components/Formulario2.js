@@ -10,6 +10,7 @@ const Formulario2 = () => {
     return (
         <>
             <Container className="PrincipalContainer">
+
                 <Row>
                         <Col className="SquadStand">logo</Col>
                     <Col>
@@ -24,359 +25,575 @@ const Formulario2 = () => {
                         </Row>
                     </Col>
                 </Row>
-                <Row>
-                    <Col className="SquadStand">Socio N°:</Col>
-                    <Col className="SquadStand"></Col>
-                    <Col className="SquadStand">Deudor:</Col>
-                    <Col className="SquadStand"></Col>
-                    <Col className="SquadStand">Garante:</Col>
-                    <Col className="SquadStand"></Col>
-                    <Col className="SquadStand">MICROCRÉDITO</Col>
-                    <Col className="SquadStand"></Col>
-                    <Col className="SquadStand">CONSUMO</Col>
-                    <Col className="SquadStand"></Col>
-                    <Col className="SquadStand"></Col>
-                    <Col className="SquadStand">Fecha de solicitud:</Col>
-                    <Col className="SquadStand"></Col>
+
+                <Row class="row gx-4 justify-content-center">
+                    <Col className="SquadStand2">Socio N°:</Col>
+                    <Col className="SquadStand2"></Col>
+                    <Col className="SquadStand2">Deudor:</Col>
+                    <Col className="SquadStand2"></Col>
+                    <Col className="SquadStand2">Garante:</Col>
+                    <Col className="SquadStand2"></Col>
+                    <Col className="SquadStand2">MICROCRÉDITO</Col>
+                    <Col className="SquadStand2"></Col>
+                    <Col className="SquadStand2">CONSUMO</Col>
+                    <Col className="SquadStand2"></Col>
+                    <Col className="SquadStand2"></Col>
+                    <Col className="SquadStand2">Fecha de solicitud:</Col>
+                    <Col className="SquadStand2"></Col>
                 </Row>
-                <Row className="SquadStand">
+
+                <Row className="Seccionador">
                     DATOS DEL CRÉDITO
                 </Row>
+
                 <Row>
-                    <Col>
-                        <Row className="SquadStand">
-                            MONTO SOLICITADO
+                    <Col className="SquadStand">
+             
+                        MONTO SOLICITADO
+                      
+                        {/* <Row className="SquadStand">
+                            <p>$</p>
+                            <p>Plazo(Meses)</p>
+                        </Row> */}
+                    </Col>
+
+                    <Col className="SquadStand">
+                            GARANTÍA
+                       
+                        <Row>
+                            {/* <Col>
+                                <Col>
+                                Quirografía<br/>
+                                Hipotecario<br/>
+                                Titulo de valor<br/>
+                                Otros<br/>
+                                </Col>
+                            </Col> */}
+
+                                {/* <Col>
+                                    <Col className="SquadStand2">
+                                        X
+                                    </Col>
+                                    <Col className="SquadStand2">
+                                        X
+                                    </Col>
+                                    <Col className="SquadStand2">
+                                        X
+                                    </Col>
+                                    <Col className="SquadStand2">
+                                        X
+                                    </Col>
+                                </Col> */}
+
                         </Row>
-                        <Row className="SquadStand">
+                    </Col>
+
+                    <Col className="SquadStand">
+
+                        DESTINO DEL CREDITO
+                       
+                       
+                    </Col>
+
+                 
+                    <Col className="SquadStand">
+                    
+                            Forma de Pago
+                    
+                        <Row>
+                            
+
+                            {/* <Col>
+                                <Col className="SquadStand2">
+                                    X
+                                </Col>
+                                <Col className="SquadStand2">
+                                    X
+                                </Col>
+                                <Col className="SquadStand2">
+                                    X
+                                </Col>
+                                <Col className="SquadStand2">
+                                    X
+                                </Col>
+                            </Col> */}
+
+                        </Row>
+                    </Col>
+
+                    <Col className="SquadStand">
+                        Hola
+                    </Col>
+                </Row>
+
+                <Row>
+
+                    <Col className="SquadStand">
+     
+                        <Row>
                             <p>$</p>
                             <p>Plazo(Meses)</p>
                         </Row>
                     </Col>
+
                     <Col>
-                        <Row className="SquadStand">
-                            GARANTÍA
-                        </Row>
-                        <Row>
-                            <Col>
-                                Quirografía<br/>
-                                Hipotecario<br/>
-                                Titulo de valor<br/>
-                                Otros<br/>
-                            </Col>
-
-                                <Col>
-                                    <Col>
-                                        X
-                                    </Col>
-                                    <Col>
-                                        X
-                                    </Col>
-                                    <Col>
-                                        X
-                                    </Col>
-                                </Col>
-
+                        <Row className="SquadStand justify-content-center">
+                            Quirografaria<br />
+                            Hipotecario<br />
+                            Título de Valor<br />
+                            Otros<br />
                         </Row>
                     </Col>
+
+                    <Col className="SquadStand">
+
+                        _________________
+                       
+
+                    </Col>
+
                     <Col>
-                        <Row className="SquadStand">
-                            DESTINO DEL CREDITO
-                        </Row>
-                        <Row>
-                            _______
-                        </Row>
-                        <Row>
-                            _______
+                        <Row className="SquadStand justify-content-center">
+                            Mensual<br />
+                            Trimestral<br />
+                            Al vencimiento<br />
+                            Otros<br />
                         </Row>
                     </Col>
-                    <Col>
-                        <Row className="SquadStand">
-                            Forma de Pago
-                        </Row>
-                        <Row>
-                            <Col>
-                                Quirografía<br/>
-                                Hipotecario<br/>
-                                Titulo de valor<br/>
-                                Otros<br/>
-                            </Col>
-
-                            <Col>
-                                <Col>
-                                    X
-                                </Col>
-                                <Col>
-                                    X
-                                </Col>
-                                <Col>
-                                    X
-                                </Col>
-                            </Col>
-
-                        </Row>
-                    </Col>
-                    <Col>
-                        <Row className="SquadStand"></Row>
-                        <Row className="SquadStand">
-                            Hola
-                        </Row>
+                 
+                    <Col className="SquadStand">
+                            ¿Cuánto Puede Pagar? $<br />
+                            Día propuesto de pago:<br />
                     </Col>
                 </Row>
-                <Row className="SquadStand">
+
+                
+                <Row className="Seccionador">
                     Dato del solicitante
                 </Row>
-                {/*Datos Cliente*/}
-                <Row className="SquadStand">
+
+               
+               
+                <Row className="SquadStand2">
                     <Row>
                         <Col>
-                            Apellido y Nombre
+                            Apellido y Nombre: <u>DANNY ALEXANDER GUAÑUNA AJILA</u>
                         </Col>
                         <Col>
-                            Cedula
+                            Cedula: <u>172598869929</u>
                         </Col>
                         <Col>
-                            Estado Civil
+                            Estado Civil: <u>CASADO</u>
+                        </Col>
+                        
+                    </Row>
+          
+                    <Row>
+                        <Col>
+                            F. Nacimiento: &nbsp;&nbsp; &nbsp; &nbsp;  A 1997/M 07 /D 27
+                        </Col>
+                        <Col>
+                            Años: <u>25</u>
+                        </Col>
+                        <Col>
+                            Nivel Estudio: <u>UNIVERSIDAD</u>
+                        </Col>
+                        <Col>
+                            Ocupación: <u>DESARROLLADOR SOFTWARE</u>
+                        </Col>
+                        
+                        
+                    </Row>
+                    
+                    <Row>
+                        <Col>
+                            Domicilio/Provincia: <u>POMASQUI, PICHINCHA</u>
+                        </Col>
+                        <Col>
+                            Cantón: <u>QUITO</u>
+                        </Col>
+                        <Col>
+                            Parroquia: <u>CHILLOGALLO</u>
+                        </Col>
+                        <Col>
+                            Comunidad: <u>SOCIAL</u>
                         </Col>
                     </Row>
+
                     <Row>
-                        Fecha
+                        <Col>
+                            Sector/Barrio: <u>SANTA PRISCA, SEC 5</u>
+                        </Col>
+                        <Col>
+                            Dirección(Calles): <u>CALLE ALFA Y CALLE BETA</u>
+                        </Col>
+                        <Col>
+                            N°Casa: <u>23</u>
+                        </Col>
                     </Row>
+                    
                     <Row>
-                        Domicilio
+                        <Col>
+                            Referencia: <u>PLATAFORMA NORTE</u>
+                        </Col>
+                        <Col>
+                            Telf: <u>258987978</u>
+                        </Col>
+                        <Col>
+                            Cel: <u>0988789965</u>
+                        </Col>
+                        <Col>
+                            E-Mail: <u>dannymail@mail.com</u>
+                        </Col>
                     </Row>
+
                     <Row>
-                        Sector
+                        <Col>
+                            N° Hijos( ): <u>5</u>
+                        </Col>
+                        <Col>
+                            N° Hijos que estudian( ): <u>8</u>
+                        </Col>
+                        <Col>
+                            Existe separación de Bienes: &nbsp;  SI() &nbsp;  NO(<u>X</u>)
+                        </Col>
+                        <Col>
+                            VIVIENDA: &nbsp;  Propia() &nbsp;  Familiar(<u>X</u>)  &nbsp;  Arriendo()
+                        </Col>
                     </Row>
+
                     <Row>
-                        Referencia
+                        <Col>
+                            Tiempo de residencia:&nbsp; &nbsp;  (Meses): <u>12</u>
+                        </Col>
+                        <Col>
+                            Nombre del Arrendatario / Familiar: <u>ARRENDATADARIO FAMILIAR</u>
+                        </Col>
+                        <Col>
+                            Telefono: <u>0987418889</u>
+                        </Col>
                     </Row>
+
                     <Row>
-                        N Hijo
+                        <Col>
+                            ¿Es familiar de un Directivo de la Cooperativa?: &nbsp;  SI(<u>X</u>) &nbsp;  NO()
+                        </Col>
+                        <Col>
+                            Nombre: <u>ALEXANDER HERRERA</u>
+                        </Col>
+                        <Col>
+                            Parentesco: <u>PRIMO</u>
+                        </Col>
                     </Row>
-                    <Row>
-                        Tiempo de resindencia
-                    </Row>
-                    <Row>
-                        ¿Es familiar de un Directivo de la Cooperativa?
-                    </Row>
+
                 </Row>
 
-                <Row className="SquadStand">
+
+                <Row className="Seccionador">
                     Datos de cónyuge
                 </Row>
-                <Row className="SquadStand">
+
+
+                <Row className="SquadStand2">
                     <Row>
                         <Col>
-                            Apellido y Nombre
+                            Apellidos y Nombres:
                         </Col>
                         <Col>
-                            Cedula
+                            Cédula:
                         </Col>
                         <Col>
-                            Estado Civil
+                            F. Nacimiento: &nbsp;&nbsp; &nbsp; &nbsp;  A____/M_____/D____
+                        </Col>
+                        
+                    </Row>
+          
+                    <Row>
+                        <Col>
+                            Edad: &nbsp; Años &nbsp;&nbsp; Es socio # Cuenta
+                        </Col>
+                        <Col>
+                            Nivel de Estudio:
+                        </Col>
+                        <Col>
+                            Ocupación: EMPLEADO() &nbsp;&nbsp; NEGOCIO PROPIO ()
                         </Col>
                     </Row>
+                    
                     <Row>
-                        Fecha
+                        <Col>
+                            Nombre Empresa: 
+                        </Col>
+                        <Col>
+                            Actividad Empresa / Negocio:
+                        </Col>
+                        <Col>
+                            Dir. Ciudad
+                        </Col>
                     </Row>
+
                     <Row>
-                        Domicilio
+                        <Col>
+                            Parroquia:
+                        </Col>
+                        <Col>
+                            Barrio:
+                        </Col>
+                        <Col>
+                            Calle:
+                        </Col>
+                        <Col>
+                            Telf:
+                        </Col>
                     </Row>
+                    
                     <Row>
-                        Sector
-                    </Row>
-                    <Row>
-                        Referencia
+                        <Col>
+                            Tiempo / Experiencia: &nbsp; Años
+                        </Col>
+                        <Col>
+                            Cargo:
+                        </Col>
+                        <Col>
+                            Utilidad / Sueldo Mensual: $:&nbsp; USD
+                        </Col>
+                        <Col>
+                            Local: Propio () &nbsp; Familiar () &nbsp; Arriendo () 
+                        </Col>
+                        
                     </Row>
                 </Row>
 
 
-                <Row className="SquadStand">
+                <Row className="Seccionador">
                     Ocupación caso de ser empleado
                 </Row>
-                <Row className="SquadStand">
+
+                <Row className="SquadStand2">
                     <Row>
                         <Col>
-                            Nombre de la empresa
+                            Nombre de la empresa:
                         </Col>
                         <Col>
-                            Provincia
+                            Dirección de la Empresa:
+                        </Col>
+                    </Row>
+          
+                    <Row>
+                        <Col>
+                            Provincia: 
                         </Col>
                         <Col>
-                            Telefono
+                            Cantón
+                        </Col>
+                        <Col>
+                            Parroquia
+                        </Col>
+                        <Col>
+                            Calle
                         </Col>
                     </Row>
+                    
                     <Row>
-                        Fecha
+                        <Col>
+                            Telefono:
+                        </Col>
+                        <Col>
+                            Tiempo del Negocio: &nsp; Años
+                        </Col>
+                        <Col>
+                            Cargo:
+                        </Col>
+                        <Col>
+                            Utilidad Mensual: $ &nsp; USD.
+                        </Col>
                     </Row>
-                    <Row>
-                        Domicilio
-                    </Row>
+
                 </Row>
 
-                <Row className="SquadStand">
+
+             
+
+                <Row className="Seccionador">
                     Flujo de caja familiar
                 </Row>
+
+              
+
+
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand3">INGRESOS MENSUALES</Col>
+                    <Col className="SquadStand3">GASTOS MENSUALES</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">1</Col>
+                    <Col className="SquadStand">Sueldo / Remuneración</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">1</Col>
+                    <Col className="SquadStand">Alimentación</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">6</Col>
+                    <Col className="SquadStand">Pago de Préstamos</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">2</Col>
+                    <Col className="SquadStand">Sueldo / Remuneración del Cónyuge</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">2</Col>
+                    <Col className="SquadStand">Arriendos</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">7</Col>
+                    <Col className="SquadStand">Transporte</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">3</Col>
+                    <Col className="SquadStand">Útilidad Mensual del Negocio</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">3</Col>
+                    <Col className="SquadStand">Educación</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">8</Col>
+                    <Col className="SquadStand">Otros Gastos</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">4</Col>
+                    <Col className="SquadStand">Ingreso por remesas</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">4</Col>
+                    <Col className="SquadStand">Servicios Básicos</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">B</Col>
+                    <Col className="SquadStand">TOTAL GASTOS</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">5</Col>
+                    <Col className="SquadStand">Otros Ingresos (justifique)</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">5</Col>
+                    <Col className="SquadStand">Salud</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">A</Col>
+                    <Col className="SquadStand">TOTAL DE INGRESOS</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand">Ingreso neto familiar (Total Ingreso - Total Gastos)</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
 
 
-                <Row className="SquadStand">
-                    Declaracion Patrimonial
+                <Row className="Seccionador">
+                    6. Declaracion Patrimonial
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand3"><b>ACTIVOS</b></Col>
+                    <Col className="SquadStand3"></Col>
+                    <Col className="SquadStand3"><b>PASIVOS</b></Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">1</Col>
+                    <Col className="SquadStand">CAJA / BANCOS</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">1</Col>
+                    <Col className="SquadStand">DEUDAS / BANCOS</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">2</Col>
+                    <Col className="SquadStand">CTAS. POR COBRAR</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">2</Col>
+                    <Col className="SquadStand">DEUDAS / COOPERATIVAS</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">3</Col>
+                    <Col className="SquadStand">MERCADERIA / INVNETARIO</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">3</Col>
+                    <Col className="SquadStand">PROVEEDORES</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">4</Col>
+                    <Col className="SquadStand">TERRENO</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">4</Col>
+                    <Col className="SquadStand">CASAS COMERCIALES</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">5</Col>
+                    <Col className="SquadStand">CASA</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">5</Col>
+                    <Col className="SquadStand">PRESTAMISTAS</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">7</Col>
+                    <Col className="SquadStand">VEHÍCULO</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">7</Col>
+                    <Col className="SquadStand">OTROS</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">8</Col>
+                    <Col className="SquadStand">ENSERES</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">8</Col>
+                    <Col className="SquadStand">TOTAL PASIVOS</Col>
+                    <Col className="SquadStand">$</Col>
+                </Row>
+                <Row>
+                    <Col className="SquadStand">9</Col>
+                    <Col className="SquadStand">OTROS</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">PATRIMONIO = ACTIVO - PASIVO</Col>
+                    <Col className="SquadStand">$</Col>
+                </Row>
+                <Row>
+                    <Col className="SquadStand">10</Col>
+                    <Col className="SquadStand">TOTAL ACTIVOS</Col>
+                    <Col className="SquadStand">$</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand">PATRIMONIO</Col>
+                    <Col className="SquadStand">$</Col>
                 </Row>
 
-                <Row className="SquadStand">
+
+                <Row className="Seccionador">
                     Referencia
                 </Row>
-                <Row className="SquadStand">
+                <Row className="SquadStand3">
                     Referencias Personales
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">NOMBRES Y APELLIDOS</Col>
+                    <Col className="SquadStand">DIRECCIÓN</Col>
+                    <Col className="SquadStand">TELÉFONO</Col>
+                    <Col className="SquadStand">PARENTESCO</Col>
+                    <Col className="SquadStand">CORREO ELECTRÓNICO / F</Col>
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand"></Col>
                     <Col className="SquadStand">1 of 1</Col>
                 </Row>
 
@@ -408,7 +625,7 @@ const Formulario2 = () => {
                 </Row>
 
 
-                <Row className="SquadStand">
+                <Row className="Seccionador">
                     Croquis
                 </Row>
                 <Row>
@@ -428,7 +645,7 @@ const Formulario2 = () => {
                     <Col className="SquadStand">1 of 1</Col>
                 </Row>
 
-                <Row className="SquadStand">
+                <Row className="Seccionador">
                     Declaración y Autorización
                 </Row>
                 <Row className="SquadStand">
