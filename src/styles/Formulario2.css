@@ -28,11 +28,14 @@
 
 .SquadStand3{
     border: 1px solid black;
-    background-color: gray;
+    background-color: rgb(211, 207, 207);
 
 }
 
-
+.SquadStand4{
+    border: 1px solid black;
+    text-align: left;
+}
 
 .SquadStandCol2{
     border: 2px solid black;
