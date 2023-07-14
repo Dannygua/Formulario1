@@ -1,12 +1,11 @@
 import "./App.css";
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SendData from "./components/SendData";
-import { Button, Checkbox, Form, Input } from "antd";
-import Formulario2 from "./components/Formulario2";
+import { Button, Form, Input } from "antd";
 
 function App() {
   const [usuarios, setUsers] = useState([]);
+  const [usuariosPhone, setusuariosPhone] = useState([]);
   const [loading, setLoading] = useState(true);
   const fetchUserData = (data) => {
     setLoading(true);
@@ -21,13 +20,36 @@ function App() {
         return response.json();
       })
       .then((data) => {
+        console.log(data["soap:Envelope"]["soap:Body"][0].ObtenerDataClickFullResponse[0]
+          .ObtenerDataClickFullResult[0]["diffgr:diffgram"][0].NewDataSet[0])
+
         setUsers(
           data["soap:Envelope"]["soap:Body"][0].ObtenerDataClickFullResponse[0]
             .ObtenerDataClickFullResult[0]["diffgr:diffgram"][0].NewDataSet[0]
         );
 
         setLoading(false);
+
       });
+
+    fetch("http://localhost:4000/api/Info/MoreEqui", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setusuariosPhone(data["soap:Envelope"]["soap:Body"][0].ObtenerNivelDireccionesyTelefonosResponse[0]
+          .ObtenerNivelDireccionesyTelefonosResult[0]["diffgr:diffgram"][0].NewDataSet[0])
+
+        console.log(data["soap:Envelope"]["soap:Body"][0].ObtenerNivelDireccionesyTelefonosResponse[0]
+          .ObtenerNivelDireccionesyTelefonosResult[0]["diffgr:diffgram"][0].NewDataSet[0])
+      });
+
   };
 
   const onFinish = (values) => {
@@ -96,8 +118,7 @@ function App() {
           </Button>
         </Form.Item>
       </Form>
-      <Formulario2 />
-      <SendData loading={loading} usuarios={usuarios} />
+      <SendData loading={loading} usuarios={usuarios} usuariosPhone={usuariosPhone} />
     </div>
   );
 }

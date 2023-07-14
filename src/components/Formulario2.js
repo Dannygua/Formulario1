@@ -4,12 +4,23 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import "../styles/Formulario2.css";
 
-const Formulario2 = () => {
+const Formulario2 = ({ usuarios, usuariosPhone }) => {
   return (
     <>
       <Container className="PrincipalContainer">
         <Row>
-          <Col className="SquadStand">logo</Col>
+          <Col className="SquadStand" md={4}>
+
+            <img
+              style={{
+                height: "100%",
+                width: "100%",
+                padding: "0px",
+                margin: "0px",
+              }}
+              src={require("../images/Logo3.png")}
+            />
+          </Col>
           <Col>
             <Row className="SquadStand">
               NOTA: LOS DATOS POR USTED PROPORCIONADOS SON DE CARÁCTER
@@ -157,10 +168,10 @@ const Formulario2 = () => {
         <Row className="SquadStand2">
           <Row>
             <Col>
-              Apellido y Nombre: <u>DANNY ALEXANDER GUAÑUNA AJILA</u>
+              Apellido y Nombre: <u>{usuarios?.Informacion_x0020_Personal[0]?.Nombres}</u>
             </Col>
             <Col>
-              Cedula: <u>172598869929</u>
+              Cedula: <u>{usuarios?.Informacion_x0020_Personal[0]?.Identificacion}</u>
             </Col>
             <Col>
               Estado Civil: <u>CASADO</u>
@@ -172,10 +183,10 @@ const Formulario2 = () => {
               F. Nacimiento: &nbsp;&nbsp; &nbsp; &nbsp; A 1997/M 07 /D 27
             </Col>
             <Col>
-              Años: <u>25</u>
+              Años: <u>{usuarios?.Informacion_x0020_Personal[0]?.Edad}</u>
             </Col>
             <Col>
-              Nivel Estudio: <u>UNIVERSIDAD</u>
+              Nivel Estudio: <u>{usuarios?.Informacion_x0020_Personal[0]?.NiveldeInstruccion}</u>
             </Col>
             <Col>
               Ocupación: <u>DESARROLLADOR SOFTWARE</u>
@@ -248,7 +259,7 @@ const Formulario2 = () => {
               Nombre del Arrendatario / Familiar: <u>ARRENDATADARIO FAMILIAR</u>
             </Col>
             <Col>
-              Telefono: <u>0987418889</u>
+              Telefono: <u>{usuariosPhone?.DetalleTelefonos[0]?.telefono}</u>
             </Col>
           </Row>
 
@@ -615,7 +626,7 @@ const Formulario2 = () => {
           <Col className="SquadStand">TRABAJO DEL SOCIO / GARANTE</Col>
         </Row>
         <Row>
-          <Col className="SquadStand">1 of 1</Col>
+          <Col className="SquadStand"></Col>
           <Col className="SquadStand">1 of 1</Col>
         </Row>
         <Row>
@@ -708,6 +719,9 @@ const Formulario2 = () => {
           <Col className="SquadStand4" md={1}></Col>
           <Col className="SquadStand4">Fecha:</Col>
         </Row>
+        <Row>
+          <Col className="SquadStand2"> 1 OF 1</Col>
+        </Row>
 
         <Row>
           <Col className="SquadStand3">OBSERVACIONES EJECUTIVO COMERCIAL</Col>
@@ -723,8 +737,8 @@ const Formulario2 = () => {
           <Col className="SquadStand">1 of 1</Col>
         </Row>
         <Row>
-          <Col className="SquadStand">1 of 1</Col>
-          <Col className="SquadStand">1 of 1</Col>
+          <Col className="SquadStand">Nombre / Firma ______________________ / _________________________</Col>
+          <Col className="SquadStand">Nombre / Firma _____________________ / ________________________</Col>
         </Row>
       </Container>
     </>

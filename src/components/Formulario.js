@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import "../styles/Formulario.css";
 
-const Formulario = () => {
+const Formulario = ({ usuarios, usuariosPhone }) => {
   const tab = '\u00A0';
   return (
     <div>
@@ -115,7 +115,7 @@ const Formulario = () => {
         </Row>
         <Row>
           <Col className="SquadStandCol4"></Col>
-          <Col className="SquadStandCol4"></Col>
+          <Col className="SquadStandCol4">{usuarios?.Informacion_x0020_Personal[0]?.Nombres}</Col>
           <Col className="">
             <Row>
               <Col className="SquadStandCol4_1">Cédula</Col>
@@ -128,7 +128,7 @@ const Formulario = () => {
           </Col>
           <Col>
             <Row>
-              <Col className="SquadStandCol4_3"></Col>
+              <Col className="SquadStandCol4_3">{usuarios?.Informacion_x0020_Personal[0]?.Identificacion}</Col>
             </Row>
             <Row>
               <Col className="SquadStandCol4_4">Número de visa</Col>
@@ -139,7 +139,7 @@ const Formulario = () => {
           </Col>
           <Col>
             <Row>
-              <Col className="SquadStandCol4_6">País:</Col>
+              <Col className="SquadStandCol4_6">País: </Col>
             </Row>
             <Row>
               <Col className="SquadStandCol4_6">Cantón:</Col>
@@ -148,7 +148,7 @@ const Formulario = () => {
               <Col className="SquadStandCol4_6">Ciudad:</Col>
             </Row>
             <Row>
-              <Col className="SquadStandCol4_6">Nacionalidad:</Col>
+              <Col className="SquadStandCol4_6">Nacionalidad: </Col>
             </Row>
           </Col>
           <Col className="SquadStandCol4"></Col>
@@ -166,7 +166,7 @@ const Formulario = () => {
           <Col className="SquadStandCol5" md={2}>
             Nivel de Instrucción:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuarios?.Informacion_x0020_Personal[0]?.NiveldeInstruccion}</Col>
           <Col className="SquadStandCol5" md={1}>
             Etnia:
           </Col>
@@ -233,25 +233,25 @@ const Formulario = () => {
           <Col className="SquadStandCol5" md={1}>
             Provincia / Departamento:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[2]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}>
             Calle principal:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[4]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}>
             Teléfono domicilio:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleTelefonos[0]?.telefono}</Col>
         </Row>
         <Row>
           <Col className="SquadStandCol5" md={1}>
             Cantón:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[1]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}>
             Número:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[2]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}>
             Celular:
           </Col>
@@ -261,11 +261,11 @@ const Formulario = () => {
           <Col className="SquadStandCol5" md={1}>
             Ciudad:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[0]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}>
             Calle principal:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[4]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}>
             Correo electrónico:
           </Col>
@@ -275,11 +275,11 @@ const Formulario = () => {
           <Col className="SquadStandCol5" md={1}>
             Sector o Barrio:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[0]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}>
             Punto de referencia:
           </Col>
-          <Col className="SquadStandCol5"></Col>
+          <Col className="SquadStandCol5">{usuariosPhone?.DetalleDirecciones[0]?.Column1}</Col>
           <Col className="SquadStandCol5" md={1}></Col>
           <Col className="SquadStandCol5"></Col>
         </Row>
