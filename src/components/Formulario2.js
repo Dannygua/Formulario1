@@ -11,7 +11,7 @@ const Formulario2 = () => {
         <>
             <Container className="PrincipalContainer">
                 <Row>
-                        <Col className="SquadStand">logo</Col>
+                    <Col className="SquadStand">logo</Col>
                     <Col>
                         <Row className="SquadStand">NOTA: LOS DATOS POR USTED PROPORCIONADOS SON DE CARÁCTER CONFIDENCIALES Y SUJETOS DE APROBACIÓN,
                             CUALQUIER DATO COMPROBADO FALSO SERÁ CAUSA PARA NEGAR EL CRÉDITO</Row>
@@ -58,23 +58,23 @@ const Formulario2 = () => {
                         </Row>
                         <Row>
                             <Col>
-                                Quirografía<br/>
-                                Hipotecario<br/>
-                                Titulo de valor<br/>
-                                Otros<br/>
+                                Quirografía<br />
+                                Hipotecario<br />
+                                Titulo de valor<br />
+                                Otros<br />
                             </Col>
 
+                            <Col>
                                 <Col>
-                                    <Col>
-                                        X
-                                    </Col>
-                                    <Col>
-                                        X
-                                    </Col>
-                                    <Col>
-                                        X
-                                    </Col>
+                                    X
                                 </Col>
+                                <Col>
+                                    X
+                                </Col>
+                                <Col>
+                                    X
+                                </Col>
+                            </Col>
 
                         </Row>
                     </Col>
@@ -95,10 +95,10 @@ const Formulario2 = () => {
                         </Row>
                         <Row>
                             <Col>
-                                Quirografía<br/>
-                                Hipotecario<br/>
-                                Titulo de valor<br/>
-                                Otros<br/>
+                                Quirografía<br />
+                                Hipotecario<br />
+                                Titulo de valor<br />
+                                Otros<br />
                             </Col>
 
                             <Col>
@@ -366,11 +366,11 @@ const Formulario2 = () => {
                     Referencias Personales
                 </Row>
                 <Row>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
-                    <Col className="SquadStand">1 of 1</Col>
+                    <Col className="SquadStand">NOMBRE Y APELLIDOS</Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand"></Col>
+                    <Col className="SquadStand"></Col>
                 </Row>
                 <Row>
                     <Col className="SquadStand">1 of 1</Col>
