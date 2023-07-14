@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SendData from "./components/SendData";
 import { Button, Checkbox, Form, Input } from "antd";
-import Formulario from "./components/Formulario";
+import Formulario2 from "./components/Formulario2";
 
 function App() {
   const [usuarios, setUsers] = useState([]);
@@ -96,7 +96,7 @@ function App() {
           </Button>
         </Form.Item>
       </Form>
-      <Formulario />
+      <Formulario2 />
       <SendData loading={loading} usuarios={usuarios} />
     </div>
   );
